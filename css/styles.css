@@ -42,6 +42,9 @@ main p {
   text-decoration: underline;
   background-color: yellow;
 }
+main p img {
+  width: 200px;
+}
 #app ul {
   background-color: linen;
   padding: 0px 140px;

@@ -25,7 +25,9 @@
 
       <!-- main -->
       <main>
-          <p v-if="items.length === 0">Non ci sono Todo, se vuoi, aggiungine altri!</p>
+          <p v-if="items.length === 0">Non ci sono Todo, se vuoi, aggiungine altri!
+            <img src="./img/homer.gif" alt="">
+          </p>
           <ul>
             <li v-for="(item, index) in items">{{item}}
               <i class="fas fa-times"

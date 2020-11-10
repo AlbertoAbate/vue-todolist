@@ -16,5 +16,9 @@ const app = new Vue ({
     removeEl(index) {
       this.items.splice(index, 1);
     },
+    submit() {
+      this.items.push(this.newItem);
+      this.newItem ='';
+    }
   }
 });

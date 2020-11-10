@@ -36,6 +36,12 @@ body {
   color: linen;
 }
 /* main */
+main p {
+  text-align: center;
+  margin-top: 60px;
+  text-decoration: underline;
+  background-color: yellow;
+}
 #app ul {
   background-color: linen;
   padding: 0px 140px;

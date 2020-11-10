@@ -18,14 +18,14 @@
           <img src="./img/boolean.png" alt="">
         </div>
         <div class="header-bottom">
-          <input id="input" type="text" placeholder="Nuovo Todo" v-model="newItem">
+          <input id="input" type="text" placeholder="Nuovo Todo" v-model="newItem" v-on:keyup.enter="submit">
           <button v-on:click="addItem">Aggiungi</button>
         </div>
       </header>
 
       <!-- main -->
       <main>
-
+          <p v-if="items.length === 0">Non ci sono Todo, se vuoi, aggiungine altri!</p>
           <ul>
             <li v-for="(item, index) in items">{{item}}
               <i class="fas fa-times"

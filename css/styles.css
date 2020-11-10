@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Xanh Mono', monospace;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+/* header */
+/* header-top */
+.header-top img {
+  width: 215px;
+  display: block;
+  margin: 0 auto;
+}
+/* header-bottom */
+.header-bottom input {
+  width: 300px;
+  height: 30px;
+  border-radius: 50px;
+  padding-left: 10px;
+  background-color: linen;
+  color: sienna;
+  font-family: 'Xanh Mono', monospace;
+}
+.header-bottom button {
+  width: 80px;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 50px;
+  background-color: sienna;
+  color: linen;
+}
+/* main */
+#app {
+  background-color: linen;
+  padding: 0px 40px;
+}
+#app ul {
+  margin-top: 40px;
+}
+#app li {
+  margin-top: 15px;
+  list-style: none;
+  border-bottom: 1px solid lightgrey;
+  color: sienna;
+}

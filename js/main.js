@@ -2,7 +2,9 @@
 const app = new Vue ({
   el: "#app",
   data: {
-    items: ['fare i compiti', 'fare la spesa', 'fare il bucato']
+    indexItem: 0,
+    items: ['fare i compiti', 'fare la spesa', 'fare il bucato'],
+    newItem: ''
   },
 
   methods:{
@@ -10,6 +12,9 @@ const app = new Vue ({
     addItem() {
       this.items.push(this.newItem);
       this.newItem ='';
-    }
+    },
+    removeEl(index) {
+      this.items.splice(index, 1);
+    },
   }
 });

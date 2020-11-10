@@ -38,12 +38,17 @@ body {
 /* main */
 #app ul {
   background-color: linen;
-  padding: 0px 40px;
+  padding: 0px 140px;
   margin-top: 40px;
 }
 #app li {
+  display: flex;
+  justify-content: space-between;
   margin-top: 15px;
   list-style: none;
   border-bottom: 1px solid lightgrey;
   color: sienna;
+}
+#app li i {
+  cursor: pointer;
 }

@@ -36,11 +36,9 @@ body {
   color: linen;
 }
 /* main */
-#app {
+#app ul {
   background-color: linen;
   padding: 0px 40px;
-}
-#app ul {
   margin-top: 40px;
 }
 #app li {

@@ -10,7 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div id="app">
+     <div class="container">
       <!-- header -->
       <header>
         <div class="header-top">
@@ -24,12 +25,12 @@
 
       <!-- main -->
       <main>
-        <div id="app">
+
           <ul>
             <li v-for="item in items">{{item}}</li>
           </ul>
-        </div>
       </main>
+     </div>
     </div>
 
     <!-- inclusione js -->

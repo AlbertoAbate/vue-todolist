@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Xanh Mono', monospace;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 .container {
   width: 1170px;
@@ -25,7 +25,6 @@ body {
   padding-left: 10px;
   background-color: linen;
   color: sienna;
-  font-family: 'Xanh Mono', monospace;
 }
 .header-bottom button {
   width: 80px;

@@ -10,8 +10,10 @@ const app = new Vue ({
   methods:{
 
     addItem() {
+      if (this.newItem.trim() !== '') {
       this.items.push(this.newItem);
       this.newItem ='';
+    }
     },
     removeEl(index) {
       this.items.splice(index, 1);

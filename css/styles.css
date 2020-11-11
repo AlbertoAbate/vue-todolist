@@ -12,6 +12,9 @@ body {
 }
 /* header */
 /* header-top */
+.header-top {
+  display: flex;
+}
 .header-top img {
   width: 215px;
   display: block;
@@ -39,7 +42,7 @@ main p {
   text-align: center;
   margin-top: 60px;
   text-decoration: underline;
-  background-color: yellow;
+  color: sienna;
 }
 main p img {
   width: 200px;
@@ -48,15 +51,43 @@ main p img {
   background-color: linen;
   padding: 0px 140px;
   margin-top: 40px;
+  border-radius: 130px;
 }
 #app li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
   margin-top: 15px;
   list-style: none;
   border-bottom: 1px solid lightgrey;
   color: sienna;
 }
+#app li:last-child {
+  border: 0;
+}
 #app li i {
   cursor: pointer;
 }
+
+/* media query */
+@media screen and (max-width: 1020px) {
+
+  #app {
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .header-top img {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 404px) {
+ .header-bottom input {
+   width: 200px;
+ }
+ #app ul {
+   padding: 0 25px;
+ }
+}
+

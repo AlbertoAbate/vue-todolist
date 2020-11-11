@@ -10,12 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   </head>
   <body>
-    <div id="app">
-     <div class="container">
+
+     <div id="app" class="container">
       <!-- header -->
       <header>
         <div class="header-top">
-          <img src="./img/boolean.png" alt="">
+          <img src="./img/shopping.jpg" alt="">
+          <img src="./img/shopping.jpg" alt="">
+          <img src="./img/shopping.jpg" alt="">
         </div>
         <div class="header-bottom">
           <input id="input" type="text" placeholder="Nuovo Todo" v-model="newItem" v-on:keyup.enter="submit">
@@ -30,7 +32,7 @@
           </p>
           <ul>
             <li v-for="(item, index) in items">{{item}}
-              <i class="fas fa-times"
+              <i class="fas fa-trash-alt"
                   @click="removeEl(index)"
               >
               </i>
@@ -38,7 +40,6 @@
           </ul>
       </main>
      </div>
-    </div>
 
     <!-- inclusione js -->
     <script src="./js/main.js"></script>
